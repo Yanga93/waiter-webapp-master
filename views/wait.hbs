@@ -1,0 +1,19 @@
+<div class="inner cover">
+  <h3 class="cover-heading">"Hello", {{name}}</h3>
+  <p class="">Please select working days below:</p>
+
+  <center>
+    <form action="/waiter/{{name}}" method="post">
+      <div class="optBtn">
+        <input type="checkbox" name="daysName" value="monday" id="" {{#if days.monday}} checked {{/if}}>Monday
+        <input type="checkbox" name="daysName" value="tuesday" id="" {{#if days.tuesday}} checked {{/if}}>Tuesday
+        <input type="checkbox" name="daysName" value="wednesday" id="" {{#if days.wednesday}} checked {{/if}}>Wednesday
+        <input type="checkbox" name="daysName" value="thursday" id="" {{#if days.thursday}} checked {{/if}}>Thursday
+        <input type="checkbox" name="daysName" value="friday" id="" {{#if days.friday}} checked {{/if}}>Friday
+        <input type="checkbox" name="daysName" value="saturday" id="" {{#if days.saturday}} checked {{/if}}>Saturday
+        <input type="checkbox" name="daysName" value="sunday" id="" {{#if days.sunday}} checked {{/if}}>Sunday<br><br>
+        <button type="submit" class="btn btn-lg btn-success" role="button">Submit</button>
+        </div>
+    </form>
+  </center>
+  </div>
